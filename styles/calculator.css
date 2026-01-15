@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    flex-shrink: 0;
+}
+
+:root {
+    /* phone box style */
+    --phone-H:480px;
+    --phone-W:250px;
+    --phone-bg-color: white;
+    --box-color: rgb(168, 165, 165);
+    --box-dark-color: rgb(75, 75, 75);
+}
+body {
+    background-color: rgb(10, 9, 9);
+}
+nav {
+    width: 100vw;
+    height: 80px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.calHeding {
+    width: 220px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calHeding > a {
+    text-decoration: none;
+    color: white;
+}
+.calHeding > a > h1 {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 5px;
+}
+
+.calculator {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 5px;
+}
+
+
+/* main start */
+
+main {
+    width: 100vw;
+    height: 87.3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.mainbox {
+    width: var(--phone-W);
+    height: var(--phone-H);
+    background-color: white;
+    border-radius: 35px;
+    background: linear-gradient(to bottom, #eabfbf, #ffdebd);
+    padding: 1.6px;
+    box-shadow: 0 0 10px  black;
+}
+
+.mainbox2 {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 35px;
+    padding: 4px;
+    position: relative;
+
+
+}
+.spicer {
+    width: 40px;
+    background-color: rgb(39, 39, 39);
+    height: 2px;
+    position: absolute;
+    left: 108px;
+    top: 1px;
+    border-radius:1px;
+}
+.dinamicIland {
+    width: 60px;
+    height: 18px;
+    background-color: black;
+    position: absolute;
+    left: 98px;
+    top: 12px;
+    border-radius: 10px;
+    padding: 0.5px 1px;
+
+}
+.fullScree {
+    width: 85px;
+    height: 3px;
+    background-color: gray;
+    position: absolute;
+    bottom: 8px;
+    left: 92px;
+    border-radius: 10px;
+}
+.mainbox3 {
+    width: 100%;
+    height: 100%;
+    background-color: var(--phone-bg-color);
+    border-radius: 35px;
+    transition: background-color 0.4s ease-in;
+
+}
+.iconbox {
+    width: 100%;
+    display: flex;
+    border-radius: 35px 35px 0px 0px;
+    padding: 5px 17px;
+    align-items: center;
+    justify-content: space-between;
+}
+.iconbox > .time {
+    font-size: 11px;
+}
+.icons > .img {
+    width: 10px;
+}
+.icons > .img3 {
+    width: 7px;
+}
+.theme {
+    width: 100%;
+    padding: 0px 15px;
+}
+.theme > button {
+    background:none;
+    outline: none;
+    border: none;
+}
+
+.theme > button > img {
+    width: 20px;
+    cursor: pointer;
+}
+.calculatorBox {
+    width: 100%;
+    height: 416px;
+    border-radius: 0px 0px 35px 35px;
+}
+
+.inputBox {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0px 20px;
+    font-weight: bold;
+    transition: color 0.4s ease-in;
+}
+.inputBox > input {
+    width: 100%;
+    padding: 8px 10px;
+    text-align: right;
+    border: none;
+    outline: none;
+    font-size: 35px;
+    background: transparent;
+    
+}
+.calNumbers{
+    width: 100%;
+    height: 286px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 8px;
+    border-radius: 0 0 35px 35px;
+}
+.boxes1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+.boxes2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+.boxes3 {
+    display: flex;
+    justify-content: space-evenly;
+}
+.boxes4 {
+    display: flex;
+    justify-content: space-evenly;
+}
+.boxes5 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box {
+    width: 48px;
+    height: 48px;
+    background-color: var(--box-color);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.box:hover {
+    background-color: gray;
+    transition: all 0.3s;
+}
+.box2 {
+    width: 107px;
+    border-radius: 30px;
+}
+.box19 {
+    width: 107px;
+    border-radius: 30px;
+}

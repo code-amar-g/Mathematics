@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MATH Adda</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <h1>MATH <span>Adda</span></h1>
+            <p>No Fear, Only Logic</p>
+        </div>
+        <!-- title end  -->
+
+        <div class="navbar">
+            <nav>
+                <div class="operators">
+                    <a href="http://127.0.0.1:5500/components/sumComponects/sum.html"><img src="imgs/sum.png" alt="sum"></a>
+                    <a href="http://127.0.0.1:5500/components/subtractComponents/subLevel1.html"><img src="imgs/minus.png" alt="subtract"></a>
+                    <a href="http://127.0.0.1:5500/components/mulComponents/mul1.html"><img src="imgs/mul.png" alt="multiply"></a>
+                    <a href="http://127.0.0.1:5500/components/dvComponents/dv1.html"><img src="imgs/divide.png" alt="divide"></a>
+                </div>
+
+                <div class="calculator">
+                    <a href="http://127.0.0.1:5500/components/calculator.html" target="_blank"><img src="imgs/allcal.png" alt="all calculation"></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="levelHeading">
+            <h1 class="level1">Level 1</h1>
+        </div>
+
+        <div class="container1">
+            <!-- sum box start -->
+            <div class="box sum">
+                <p class="optitle">ADDITION</p>
+                <div class="numBox">
+                    <div class="sumSymbol">
+                        <p>+</p>
+                    </div>
+                    <div class="sumnumbers">
+                        <div class="sumNum1"></div>
+                        <div class="sumNum2"></div>
+                    </div>
+                </div>
+
+                <input class="userInput input" type="number">
+                <div class="btns">
+                    <div class="sumscore score">0</div>
+                    <button class="resbtn btn1">Result</button>
+                    <button class="nextbtn btn2">Next</button>
+                </div>
+
+                <div class="result">RESULT</div>
+            </div>
+            <!-- sum box end -->
+            <!-- subtract box start -->
+            <div class="box" id="sub">
+                <p class="optitle">SUBTRACT</p>
+                <div class="numBox">
+                    <div class="sumSymbol">
+                        <p>-</p>
+                    </div>
+                    <div class="sumnumbers subtractNums">
+                        <div class="subNum1"></div>
+                        <div class="subNum2"></div>
+                    </div>
+                </div>
+
+                <input class="subuserInput input" type="number">
+                <div class="btns">
+                    <div class="subscore score">0</div>
+                    <button class="subresbtn btn1">Result</button>
+                    <button class="subnextbtn btn2">Next</button>
+                </div>
+
+                <div class="subresult result">RESULT</div>
+            </div>
+            <!-- subtract box end -->
+            <!-- multiply box start -->
+            <div class="box" id="mul">
+                <p class="optitle">MULTIPLY</p>
+                <div class="numBox">
+                    <div class="sumSymbol">
+                        <p>x</p>
+                    </div>
+                    <div class="sumnumbers ">
+                        <div class="mulNum1"></div>
+                        <div class="mulNum2"></div>
+                    </div>
+                </div>
+
+                <input class="muluserInput input" type="number">
+                <div class="btns">
+                    <div class="mulscore score">0</div>
+                    <button class="mulresbtn btn1">Result</button>
+                    <button class="mulnextbtn btn2">Next</button>
+                </div>
+
+                <div class="mulresult result">RESULT</div>
+            </div>
+            <!-- multipy box end -->
+            <!-- devide box start -->
+            <div class="box" id="divide">
+                <p class="optitle">DIVISION</p>
+                <div class="numBox">
+                    <div class="sumSymbol">
+                        <p class="dv"><img src="imgs/dv.png"></p>
+                    </div>
+                    <div class="sumnumbers ">
+                        <div class="dvNum1"></div>
+                        <div class="dvNum2"></div>
+                    </div>
+                </div>
+
+                <input class="dvuserInput input" type="number">
+                <div class="btns">
+                    <div class="dvscore score">0</div>
+                    <button class="dvresbtn btn1">Result</button>
+                    <button class="dvnextbtn btn2">Next</button>
+                </div>
+
+                <div class="dvresult result">RESULT</div>
+            </div>
+        </div>
+
+        <div class="footerTile">
+            <p class="level1">For higher-level practice, use the navigation bar buttons and go beyond Level 1.</p>
+        </div>
+
+        
+    </main>
+
+
+    <script src="/scripts/script.js"></script>
+</body>
+
+</html>
